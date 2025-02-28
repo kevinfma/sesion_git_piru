@@ -1,0 +1,97 @@
+CRUD -> Create, Read, Update, Delete
+
+--------------------	API basica   --------------------
+
+https://piru.com/crud/create
+request body ->
+{
+	"name": "piru"
+	"age": 29
+}
+response body -> status_code -> 
+{
+	"status": "ok"
+	,"user_id": 1234
+}
+
+https://piru.com/crud/update
+request body ->
+{
+	"user_id": 1234
+	,"name": "piru acosta"
+	,"age": 30
+}
+response body -> status_code -> 
+{
+	"status": "ok"
+}
+
+LISTADO FINAL DE ENDPOINTS PARA CRUD
+https://piru.com/crud/create
+https://piru.com/crud/read
+https://piru.com/crud/update
+https://piru.com/crud/delete
+
+--------------------	API decente (REST)   --------------------
+https://piru.com/crud/users
+
+
+GET https://piru.com/crud
+request body ->
+{
+	
+}
+response body -> status_code -> 
+{
+	"status": "ok"
+	,"users": [
+		{
+			"user_id": 1235
+			,"name": "kevin"
+			,"age": 30
+		}
+	]
+}
+
+POST https://piru.com/crud
+request body ->
+{
+	"name": "piru"
+	"age": 29
+}
+response body -> status_code -> 
+{
+	"status": "ok"
+	,"user_id": 1234
+}
+
+PUT https://piru.com/crud
+request body ->
+{
+	"user_id": 1234
+	,"name": "piru acosta"
+	,"age": 30
+}
+response body -> status_code -> 
+{
+	"status": "ok"
+}
+
+DELETE https://piru.com/crud
+request body ->
+{
+	"user_id": 1234
+}
+response body -> status_code -> 
+{
+	"status": "ok"
+}
+
+LISTADO FINAL DE ENDPOINTS PARA CRUD
+https://piru.com/crud/users
+
+status_codes:
+	-200 -> ok
+	-400 -> no autenticado
+	-500 -> error interno
+	-404 -> no encontrado
