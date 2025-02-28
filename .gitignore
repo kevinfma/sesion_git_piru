@@ -1,0 +1,8 @@
+# Ignorando archivo por nombre directo
+# Prueba.xlsx
+
+# Ignorando extensiones
+*.xlsx
+
+# Ignorando carpetas
+Log/
